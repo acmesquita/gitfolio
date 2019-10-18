@@ -1,16 +1,34 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-// import { Container } from './styles';
+import { Container, Wrapper } from './styles';
+import Header from '../../components/Header';
+import Item from './Item';
 
 export default function ListSearch() {
 
   let { username } = useParams()
 
   return (
-    <>
-      <h1>Search for: {username}</h1>
-      <p>Listagem</p>
-    </>
+    <Container>
+      <Header search={username} />
+      <Wrapper>
+        <Item id="0" />
+        <Item id="0" />
+        <Item id="0" />
+        <Item id="0" />
+        <Item id="0" />
+        <Item id="0" />
+        <Item id="0" />
+        <Item id="0" />
+        <Item id="0" />
+        <Item id="0" />
+        <Item id="0" />
+        <Item id="0" />
+        <Item id="0" />
+        <Item id="0" />
+      </Wrapper>
+      
+    </Container>
   );
 }

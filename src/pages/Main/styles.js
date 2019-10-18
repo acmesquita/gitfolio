@@ -15,12 +15,14 @@ export const Wrapper = styled.div`
     font-size: 70px;
     text-align: center;
     padding: 10px;
+    font-weight: 500;
   }
 
   h2 {
     font-size: 30px;
     text-align: center;
     padding-bottom: 10px;
+    font-weight: 500;
   }
 
   .links {

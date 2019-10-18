@@ -40,22 +40,16 @@ export const Container = styled.div`
     text-transform: uppercase;
     color: #333;
   }
-
-  .listRepositores {
+  h2 {
     padding: 15px;
   }
-
-  .listRepositores .repositor {
-    border: 1px solid #eeee;
-    padding: 5px 15px;
-    margin: 10px 5px;
+  .list {
+    margin-left: 20%;
     display: flex;
-    justify-content: flex-start;
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
   }
 
-  .listRepositores .repositor .info {
-    margin-left: 20px;
-    padding: 3px;
-  }
 `;
