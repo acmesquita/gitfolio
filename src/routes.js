@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Main from './pages/Main'
 import ListSearch from './pages/ListSearch';
 import New from './pages/New';
+import Create from './pages/Create';
 
 export default function Routers() {
   return (
@@ -13,6 +14,7 @@ export default function Routers() {
         <Route exact path="/" component={Main} />
         <Route path="/search/:username" component={ListSearch} />
         <Route path="/new" component={New} />
+        <Route path="/create/:username" component={Create} />
       </Switch>
     </BrowserRouter>
   );
