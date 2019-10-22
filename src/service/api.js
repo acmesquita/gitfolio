@@ -24,6 +24,10 @@ export const createPortfolio = (body) => {
   return api.post('/portfolio', body.portfolio)
 }
 
+export const showPortfolio = (id) => {
+  return api.get(`/show/${id}`);
+}
+
 // Conexão com o GitHub
 export const getUser = (username) => {
   return github.get(`/${username}`);
