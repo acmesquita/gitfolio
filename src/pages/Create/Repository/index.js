@@ -5,7 +5,7 @@ import React from 'react';
 export default function Repository({ repo }) {
   return (
     <div className="repositor">
-      <img width="50" height="50" className={`padrao ${repo.language}`} />
+      <img width="50" height="50" className={`padrao ${repo.language}`} alt="" />
       <div className="info">
         <h3>{repo.name}</h3>
         <h5>{repo.full_name}</h5>

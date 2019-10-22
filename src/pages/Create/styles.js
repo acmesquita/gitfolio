@@ -35,10 +35,11 @@ export const Container = styled.div`
     height: 200px;
   }
 
-  .headerUserName .publish a {
+  .headerUserName .publish span {
     text-decoration: none;
     text-transform: uppercase;
     color: #333;
+    cursor: pointer;
   }
 
   .listRepositores {

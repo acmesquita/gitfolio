@@ -19,7 +19,7 @@ export default function Show() {
     }
 
     load()
-  }, [])
+  })
 
   return (
     <Container>

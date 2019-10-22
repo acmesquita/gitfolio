@@ -20,13 +20,13 @@ export default function ListSearch() {
     }
 
     load();
-  }, [])
+  })
 
   return (
     <Container>
       <Header search={username} />
       <Wrapper>
-        { items.length == 0 && (<h2>Nenhum resultado encontrado.</h2>)}
+        { items.length === 0 && (<h2>Nenhum resultado encontrado.</h2>)}
         { items.map((item, index) => {
           return (<Item key={index} data={item} />)
         })}
