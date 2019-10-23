@@ -16,14 +16,20 @@ export default function Create() {
     function load(){
       getUser(username).then(res => {
         setUser(res.data)
-      })
-      getUserRepository(username).then(res => {
-        setRepositories(res.data)
+        getUserRepository(username, res.data.public_repos)
+        .then(res => {
+          let resp = []
+          res.forEach(r => resp.push(r.data))
+          return resp
+        })
+        .then(res => {
+          setRepositories([].concat(...res))
+        })
       })
     }
 
     load()
-  })
+  }, [username])
 
   function publish(event){
     event.preventDefault()

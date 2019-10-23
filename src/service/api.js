@@ -33,6 +33,12 @@ export const getUser = (username) => {
   return github.get(`/${username}`);
 }
 
-export const getUserRepository = (username) => {
-  return github.get(`/${username}/repos`);
+export const getUserRepository = (username, public_repos) => {
+  const pages = public_repos > 100 ? parseInt(public_repos/100) + 1 : 1;
+  const list = []
+  for (let page = 1; page <= pages; page++) {
+    let p = github.get(`/${username}/repos?per_page=100&page=${page}`)
+    list.push(p)
+  }
+  return  Promise.all(list)
 }
