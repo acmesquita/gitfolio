@@ -51,6 +51,7 @@ export default function Create() {
     const portfolio = {
       login: user.login,
       avatar_url: user.avatar_url,
+      html_url: user.html_url,
       name: user.name,
       location: user.location,
       email: user.email,

@@ -6,4 +6,9 @@ export const Container = styled.div`
   border: 1px solid #333;
   margin: 50px 0;
   padding: 10px;
+
+  .list_info{
+    text-align: left;
+    margin: 1.5px;
+  }
 `;

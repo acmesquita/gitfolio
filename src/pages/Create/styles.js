@@ -59,38 +59,4 @@ export const Container = styled.div`
     margin-left: 20px;
     padding: 3px;
   }
-
-  .padrao{
-    background-image: url('https://ucarecdn.com/99abb6d2-48e5-46ff-93e7-5b315acd7ccb/');
-    background-size: 50px;
-  }
-
-  .HTML {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png');
-    background-size: 50px;
-  }
-  .JavaScript{
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png');
-    background-size: 50px;
-  }
-
-  .Ruby{
-    background-image: url('https://miro.medium.com/max/710/1*9hd_8qR0CMZ8L0pVbFLjDw.png');
-    background-size: 50px;
-  }
-
-  .CSS{
-    background-image: url('https://icon-library.net/images/css3-icon/css3-icon-28.jpg');
-    background-size: 50px;
-  }
-
-  .Java {
-    background-image: url('https://skillvalue.com/jobs/wp-content/uploads/sites/7/2019/07/java-developer-full-time-job-bucharest.png');
-    background-size: 50px;
-  }
-
-  .Python {
-    background-image: url('https://www.python.org/static/opengraph-icon-200x200.png');
-    background-size: 50px;
-  }
 `;

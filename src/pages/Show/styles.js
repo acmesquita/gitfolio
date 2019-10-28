@@ -27,6 +27,7 @@ export const Container = styled.div`
 
   .headerUserName .info h2{
     margin-bottom: 20px;
+    padding:0px;
   }
 
   .headerUserName .publish {
@@ -50,6 +51,15 @@ export const Container = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+  }
+
+  h2 a{
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+  }
+  h2 a:hover{
+    text-decoration: none;
   }
 
 `;

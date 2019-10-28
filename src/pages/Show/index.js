@@ -29,14 +29,17 @@ export default function Show() {
           <img alt="person" src={portfolio.avatar_url} />
         </div>
         <div className="info">
-          <h2>{portfolio.name}</h2>
+          <h2>{portfolio.name} <a href={portfolio.html_url}>({portfolio.login})</a></h2>
+          <h4>{portfolio.location}</h4>
           <p>{portfolio.bio_full}</p>
         </div>
       </div>
 
       <h2>Habilidades</h2>
       <div className="list">
-        <Ability />
+        { portfolio.abilities && portfolio.abilities.map( item => {
+          return (<Ability key={item.id} data={item}/>)
+        })}
       </div>
     </Container>
   );
