@@ -17,6 +17,7 @@ export default function Routers() {
         <Route exact path="/new" component={New} />
         <Route exact path="/create/:username" component={Create} />
         <Route exact path="/show/:id" component={Show} />
+        <Route path="*" component={Main} />
       </Switch>
     </BrowserRouter>
   );
